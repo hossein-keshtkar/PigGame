@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Pig Game</title>
+</head>
+<body>
+  <section class='container wholeContainer '>
+    <div class='overlay hidden'></div>
+    <section class='container result'>
+      <section class='container firstContainer'>
+        <div class='firstPlayer leftSide'>
+          <div class='firstPlayer scoreBoard'>
+            <h1>Player 1</h1>
+            <h2 class='playerOneTotal'>0</h2>
+          </div>
+          <div class='firstPlayer current'>
+            <h4>Current</h4>
+            <h4 class='playerOneCurrent'>0</h4>
+          </div>
+        </div> <!--leftSide-->
+      </section> <!--firstContainer-->
+      <section class='container secondContainer'>
+        <div class='secondPlayer rightSide'>
+          <div class='secondPlayer scoreBoard'>
+            <h1>Player 2</h1>
+            <h2 class='playerTwoTotal'>0</h2>
+          </div>
+          <div class='secondPlayer current'>
+            <h4>Current</h4>
+            <h4 class='playerTwoCurrent'>0</h4>
+          </div>
+        </div> <!--rightSide-->
+      </section> <!--secondContainer-->
+    </section> <!--result-->
+    <section class='container announcement hidden'>
+      <div class='announceBar'>
+        <div class='closeModal'>&times;</div>
+      </div>
+      <div class='modal'>Here Is Your Winner🎉</div> 
+      <div class='winner'>Me</div>
+    </section>
+    <section class='container diceContainer'>
+      <div class="first-face hidden">
+        <span class="pip"></span>
+      </div>
+      <div class="second-face hidden">
+        <span class="pip"></span>
+        <span class="pip"></span>
+      </div>
+      <div class="third-face hidden">
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+      </div>
+      <div class="fourth-face hidden">
+        <div class="column">
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="column">
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+      </div>
+      <div class="fifth-face hidden">
+        <div class="column">
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="column">
+          <span class="pip"></span>
+        </div>
+        <div class="column">
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+      </div>
+      <div class="sixth-face hidden">
+        <div class="column">
+          <span class="pip"></span>
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="column">
+          <span class="pip"></span>
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div> 
+      </div>
+    </section> <!--diceContainer-->
+    <section class='container btnContainer'>
+      <div class='roll'>
+        <button class='btn rollDice'>🎲 roll dice</button>
+      </div>
+      <div class='Hold'>
+        <button class='btn hold'>🤚 hold</button>
+      </div>
+      <div>
+        <button class='btn newGame'>🔄 new game</button>
+      </div>
+    </section> <!--btnContainer-->
+  <section class='container description'>
+    <div>Here are the rules. The players can "ROLL DICE" and collect  current score for themselves, as much as they want, until there be "NO NUMBER ONE". If the outcome of the dice becomes "NUMBER ONE", not only they lose their turn, but also their current score. They can click on "HOLD" in order to save their current score permanently and pass the turn. The winner will be the player who achieves 100 scores first.</div>
+  </section>
+</section> <!--wholeContainer-->
+  <script src='JavaScript.js'></script>
+</body>
+</html>
